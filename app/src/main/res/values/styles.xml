@@ -7,4 +7,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+<!--    Custom Text Styles-->
+    <style name="onboarding_title">
+        <item name="android:textColor">@color/sea_green</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="onboarding_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+
 </resources>

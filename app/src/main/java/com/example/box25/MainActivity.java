@@ -1,11 +1,17 @@
+/*
+*
+*
+* Sources: https://developer.android.com/training/tv/playback/onboarding
+* */
+
 package com.example.box25;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -14,17 +20,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Button openActivityBtn = findViewById(R.id.button2);
-        openActivityBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityRegister();
-            }
-        });
+
+        Context context;
+        SharedPreferences sharedPreferences = getSharedPreferences("my_preferences", MODE_PRIVATE);
+
+        // This checks if we need to display our on-boarding activity
+        if (!sharedPreferences.getBoolean("onboarding_complete", false)) {
+            startActivity(new Intent(this, OnboardingActivity.class));
+
+            finish();
+        } else {
+//            To be implemented
+            finish();
+        }
     }
 
-    public void openActivityRegister() {
-        Intent intent = new Intent(this, SignupActivity.class);
-        startActivity(intent);
-    }
+
 }
