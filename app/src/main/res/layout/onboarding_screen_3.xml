@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mdi_directions_run" />
+        android:src="@drawable/mdi_directions_run" />
 
     <TextView
         android:id="@+id/onboarding_screen_1_title"

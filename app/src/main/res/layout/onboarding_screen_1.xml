@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/check_logo" />
+        android:src="@drawable/check_logo" />
 
     <TextView
         android:id="@+id/onboarding_screen_1_title"
