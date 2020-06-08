@@ -1,5 +1,8 @@
 package com.example.box25
 
+
+import android.app.Activity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,5 +33,14 @@ class ViewPagerAdapter (
         holder.itemView.item_view_pager_title.setText(curTitle)
         holder.itemView.item_view_pager_text.setText(curText)
 
+        if (position == 2) {
+            holder.itemView.onboarding_get_started_button.visibility = View.VISIBLE
+            holder.itemView.onboarding_get_started_button.setOnClickListener {
+                val context = holder.itemView.context
+                val sharedPreferences = context.getSharedPreferences("my_preferences", Context.MODE_PRIVATE)
+                sharedPreferences.edit().putBoolean("onboarding_complete", true).apply()
+                (context as Activity).finish()
+            }
+        }
     }
 }

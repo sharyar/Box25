@@ -11,7 +11,13 @@
         android:id="@+id/intro_pager_updated"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.screens.intro.IntroViewPagerFragment" />
+        tools:context=".ui.screens.intro.IntroViewPagerFragment" >
+
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
 
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/indicator"
@@ -20,5 +26,7 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="20dp"
         app:ci_drawable="@drawable/green_circle"
-        app:ci_drawable_unselected="@drawable/gray_circle"/>
+        app:ci_drawable_unselected="@drawable/gray_circle">
+
+    </me.relex.circleindicator.CircleIndicator3>
 </FrameLayout>

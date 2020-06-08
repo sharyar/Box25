@@ -18,6 +18,7 @@
 
 <!--    For Login & Sign-up Activity-->
     <string name="login_title">LOGIN</string>
+    <string name="get_started_button_text">Get Started!</string>
 
     <dimen name="indicator_size">4dp</dimen>
 
