@@ -19,5 +19,6 @@
 <!--    For Login & Sign-up Activity-->
     <string name="login_title">LOGIN</string>
 
+    <dimen name="indicator_size">4dp</dimen>
 
 </resources>
