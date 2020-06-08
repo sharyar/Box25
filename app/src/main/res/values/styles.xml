@@ -7,4 +7,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+<!--    Custom Text Styles-->
+    <style name="onboarding_title">
+        <item name="android:textColor">@color/sea_green</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="onboarding_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+<!--    Style with no title bar-->
+    <style name="generalNoTitle" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>
