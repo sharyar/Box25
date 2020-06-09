@@ -8,7 +8,6 @@ package com.example.box25
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -21,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         if (!sharedPreferences.getBoolean("onboarding_complete", false)) {
             startActivity(Intent(this, OnBoardingActivity::class.java))
         } else {
-//            To be implemented
-            Toast.makeText(this, "Yay!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, SignupActivity::class.java))
         }
     }
+
+
 }

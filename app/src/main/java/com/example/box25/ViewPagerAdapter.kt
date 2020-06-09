@@ -3,6 +3,7 @@ package com.example.box25
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,7 +40,11 @@ class ViewPagerAdapter (
                 val context = holder.itemView.context
                 val sharedPreferences = context.getSharedPreferences("my_preferences", Context.MODE_PRIVATE)
                 sharedPreferences.edit().putBoolean("onboarding_complete", true).apply()
+
+//              Finishes current activity and starts the SignupActivity
+                val intent = Intent(context, SignupActivity::class.java)
                 (context as Activity).finish()
+                context.startActivity(intent)
             }
         }
     }

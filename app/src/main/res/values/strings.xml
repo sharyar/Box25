@@ -4,10 +4,9 @@
     <string name="facebook_login_protocol_scheme">fb626713688188818</string>
 
 
-
-<!--    Image Descriptions-->
+    <!--    Image Descriptions-->
     <string name="logo_description">Box25 Logo</string>
-<!--    For On-boarding Activity Text-->
+    <!--    For On-boarding Activity Text-->
     <string name="welcome_title_1_onboarding">Welcome to Box25!</string>
     <string name="welcome_text_1_onboarding">The Pomodoro Powered Productivity App! A task manager that rewards you for your focus! </string>
 
@@ -16,7 +15,7 @@
     <string name="welcome_title_3_onboarding">Lets Get Started!</string>
     <string name="welcome_text_3_onboarding">To get started, simply signup after this screen, create your first task and get going! \n\nWe also have additional documentation that you can access at any time by clicking the help button in the menu on the next screen! </string>
 
-<!--    For Login & Sign-up Activity-->
+    <!--    For Login & Sign-up Activity-->
     <string name="login_title">LOGIN</string>
     <string name="get_started_button_text">Get Started!</string>
 

@@ -1,6 +1,5 @@
 package com.example.box25
 
-import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_onboarding.*
@@ -40,12 +39,6 @@ class OnBoardingActivity: AppCompatActivity() {
         val adapter = ViewPagerAdapter(image, title, texts)
         intro_pager_updated.adapter = adapter
         indicator.setViewPager(intro_pager_updated)
-
-
     }
 
-    fun finishOnboardingUpdatePref() {
-        val sharedPreferences = getSharedPreferences("my_preferences", Context.MODE_PRIVATE)
-        sharedPreferences.edit().putBoolean("onboarding_complete", true).apply()
-    }
 }
