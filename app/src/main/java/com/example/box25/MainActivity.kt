@@ -20,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         if (!sharedPreferences.getBoolean("onboarding_complete", false)) {
             startActivity(Intent(this, OnBoardingActivity::class.java))
         } else {
-//            To be implemented
             startActivity(Intent(this, SignupActivity::class.java))
         }
     }
+
+
 }
