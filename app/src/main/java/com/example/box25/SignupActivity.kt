@@ -31,6 +31,8 @@ class SignupActivity : AppCompatActivity() {
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailableProviders(providers)
+                        .setLogo(R.drawable.login_text)
+                        .setTheme(R.style.SignUpActivityCustomTheme)
                         .build(),
                 RC_SIGN_IN)
         // [END auth_fui_create_intent]

@@ -1,13 +1,23 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+    <style name="AppTheme" parent="Theme.MaterialComponents">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="materialButtonStyle">@style/MaterialButtonCustomStyle</item>
     </style>
 
+    <style name="SignUpActivityCustomTheme" parent="generalNoTitle">
 
+        <item name="android:windowBackground">@color/dark_blue</item>
+    </style>
+
+    <style name="MaterialButtonCustomStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/sea_green</item>
+    </style>
 
 <!--    Custom Text Styles-->
     <style name="onboarding_title">
@@ -20,9 +30,13 @@
         <item name="android:textColor">@color/slate_grey</item>
     </style>
 
+
+
 <!--    Style with no title bar-->
     <style name="generalNoTitle" parent="AppTheme">
         <item name="windowNoTitle">true</item>
     </style>
+
+
 
 </resources>
