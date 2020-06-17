@@ -1,4 +1,4 @@
-package com.example.box25
+package com.example.box25.adapters
 
 
 import android.app.Activity
@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.box25.R
+import com.example.box25.activities.login.SignupActivity
 import kotlinx.android.synthetic.main.item_view_pager.view.*
 
 class ViewPagerAdapter (

@@ -18,6 +18,9 @@
     <!--    For Login & Sign-up Activity-->
     <string name="login_title">LOGIN</string>
     <string name="get_started_button_text">Get Started!</string>
+    <string name="add_new_task_button_string">Add new task</string>
+    <string name="search">search</string>
+    <string name="search_tasks">search tasks</string>
 
     <dimen name="indicator_size">4dp</dimen>
 
