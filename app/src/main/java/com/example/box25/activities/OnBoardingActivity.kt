@@ -1,7 +1,9 @@
-package com.example.box25
+package com.example.box25.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.box25.R
+import com.example.box25.adapters.ViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
 /**
