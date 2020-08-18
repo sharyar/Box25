@@ -14,9 +14,6 @@ import com.example.box25.activities.login.SignupActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
-
         super.onCreate(savedInstanceState)
 
         val sharedPreferences = getSharedPreferences("my_preferences", Context.MODE_PRIVATE)
